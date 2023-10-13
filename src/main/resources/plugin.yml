@@ -1,0 +1,14 @@
+name: Customwhitelist
+version: '${project.version}'
+main: fr.yanissou.customwhitelist.Main
+prefix: [ CUSTOMWHITELIST ]
+authors: [ Yanissou, Nanou ]
+description: A custom whitelist plugin for Minecraft 1.8.8
+data-folder: "./CustomWhitelist"
+commands:
+  cwhitelist:
+    description: Clear/Lister/Ajouter (Manuellement ou Automatiquement)/Retirer quelqu'un de la whitelist
+    permission-message: "t'as pas le droit :)"
+    permission: customwhitelist.use
+    usage: cwhitelist <add/clear/remove/list/read>
+    aliases: [customwhitelist, cwl]
