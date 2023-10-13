@@ -48,7 +48,7 @@ public class CustomWhitelist implements CommandExecutor {
                 return true;
 
             case "remove":
-                for (int i = 2; i < args.length; i++) {
+                for (int i = 1; i < args.length; i++) {
                     Bukkit.getServer().dispatchCommand(sender,"whitelist remove " + args[i]);
                 }
                 sender.sendMessage(Trads.PREFIX.message() + "§aRetrait des pseudos de la whitelist effectué avec succès !");
